@@ -1,0 +1,64 @@
+.dataMapperIcon {
+  width: 13.3px;
+  height: 23.6px;
+  position: relative;
+  object-fit: contain;
+}
+.dataMapperWrapper {
+  height: 528.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-486xl) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon {
+  width: 13.3px;
+  height: 23.6px;
+  position: relative;
+  object-fit: contain;
+}
+.section,
+.vectorWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.vectorWrapper {
+  height: 528.6px;
+  flex-direction: column;
+  padding: var(--padding-486xl) 0 0;
+}
+.section {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-45xl) 62.29999999999973px var(--padding-113xl)
+    62.299999999999955px;
+  gap: 24.40000000000009px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--title2-size);
+  color: var(--dark-blue);
+  font-family: var(--title5);
+}
+@media screen and (max-width: 1125px) {
+  .section {
+    padding-top: var(--padding-23xl);
+    padding-bottom: var(--padding-67xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .dataMapperWrapper,
+  .vectorWrapper {
+    padding-top: var(--padding-309xl);
+    box-sizing: border-box;
+  }
+  .section {
+    padding: var(--padding-8xl) var(--padding-12xl) var(--padding-37xl);
+    box-sizing: border-box;
+  }
+}

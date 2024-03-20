@@ -1,0 +1,77 @@
+.frameChild {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-lg);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.departementInner {
+  width: 268px;
+  height: 170px;
+  margin: 0 !important;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  border-radius: var(--br-5xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.photonique {
+  color: var(--color-steelblue-100);
+}
+.dpartementPhotonique {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.leDpartementPhotonique {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--title5-size);
+  line-height: 20px;
+  font-weight: 300;
+  font-family: var(--title5);
+  color: var(--dark-blue);
+}
+.departement,
+.dpartementPhotoniqueParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dpartementPhotoniqueParent {
+  padding: 0 var(--padding-6xs);
+  gap: var(--gap-3xs);
+}
+.departement {
+  width: 292px;
+  border-radius: var(--br-5xl);
+  background-color: var(--white);
+  border: 1px solid var(--color-steelblue-200);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: var(--padding-smi) var(--padding-xs) var(--padding-38xl);
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--grass);
+  font-family: var(--font-oswald);
+}
+@media screen and (max-width: 450px) {
+  .dpartementPhotonique {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+}
